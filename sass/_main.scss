@@ -1,0 +1,97 @@
+// Normally mainpage styles
+
+ /*---------sidebar----------*/
+ .sidebar{
+ 	position: fixed;
+ 	left: 0;
+ 	top: 0;
+ 	z-index: 100;
+ 	width: 252px;
+ 	height: 100vh;
+ 	background:#4f5f6f;
+ }
+ 	.logo{
+ 		background:#394657;
+ 		display: block;
+ 		height: 80px;
+ 		text-align: center;
+ 		img{
+ 			position: relative;
+ 			top: 20px;
+ 		}
+ 	}
+ 	.sidebar_list{
+ 		padding: 30px;
+ 		ul {
+ 			li{
+ 				padding-bottom: 30px;
+ 				a{
+ 					color: #fff;
+ 					font-size: 20px;
+ 					text-decoration: none;
+ 				}
+ 			}
+ 			ul{
+ 				padding-top: 30px;
+ 				li{
+ 					position: relative;
+ 					padding:0 0 20px 20px;
+ 					a{
+ 						font-size: 15px;
+ 					}
+ 					&:before{
+ 						content: '';
+ 						position: absolute;
+ 						left: 0px;
+ 						top: 7px;
+ 						background:#fff;
+ 						border-radius: 50%;
+ 						width: 7px;
+ 						height: 7px;
+ 					}
+ 				}
+ 			}
+ 		}
+ 	}
+ 	.social{
+ 		text-align: center;
+ 		color: #394657;
+ 		position: absolute;
+ 		bottom: 30px;
+ 		left: 0;
+ 		width: 100%;
+ 		a{
+ 			padding: 0 12px;
+ 		}
+ 	}
+	 	
+	 	
+ /*--------end-sidebar----------*/
+
+ /*----------header----------*/
+
+ .header{
+	@include povh('');
+	height: 80px;
+	background:#d6dde5;
+ }
+	
+/*----------end-header----------*/	
+
+
+/*----------main----------*/
+ 
+ .main{
+	@include povh('');
+ }
+
+/*----------end main----------*/	
+
+	
+/*----------footer----------*/
+ 
+ .footer{
+	@include povh('');
+ }
+
+/*----------end footer----------*/
