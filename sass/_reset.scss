@@ -85,6 +85,7 @@ a{
   cursor: pointer;
   &:hover{
     text-decoration: none;
+    color: inherit;
   }
 }
 
@@ -100,10 +101,11 @@ h6{font-size:14px;}
 .button{
   @include button('');
   &:hover{
+    color: #fff;
     @include button_gradient_hover('');
   }
 }
-input[type=text], input[type=email], input[type=tel], input[type=search], textarea{
+input[type=text], input[type=email],  input[type=password], input[type=tel], input[type=search], textarea{
    @include input('');
    &:focus{
      @include input_focus('');
