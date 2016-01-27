@@ -52,6 +52,17 @@
  				}
  			}
  		}
+ 		.panel.panel-default{
+ 			background: none;
+ 			border: none;
+ 			border-radius: 0;
+ 			& > a{
+ 				color: #93a5b7;
+ 				&.collapsed{
+ 					color: #fff;
+ 				}
+ 			}
+ 		}
  	}
  	.social{
  		text-align: center;
@@ -126,6 +137,12 @@
 			border-radius: 18px;
 			background:#54c5e3;
 			border: none;
+			font-size: 18px;
+			color: #fff;
+			img{
+				position: relative;
+				top: 2px
+			}
 		}
 	}
 		.login_block{
@@ -347,3 +364,186 @@
  }
 
 /*----------end footer----------*/
+
+/*---------domains_configurations---------*/
+.title{
+	font-size: 40px;
+	color: #161717;
+	padding-bottom: 25px;
+	font-weight: bold;
+}
+.domains_wrap{
+	p{
+		font-size: 15px;
+		color: #4f5f6f;
+		padding-bottom: 15px;
+	}
+	.blue{
+		display: block;
+		padding-bottom: 15px;
+		a{
+			font-size: 25px;
+			color: #54c5e3;
+			font-weight: bold;
+			text-decoration: none;
+		}
+	}
+}
+	.domains_info{
+		@include povh('');
+		vertical-align: top;
+		padding-bottom: 45px;
+		div{
+			width: 200px;
+			height: 70px;
+			display: inline-block;
+			vertical-align: top;
+			margin: 0 19px 0 0 ;
+			border-radius: 10px;
+			background: #d6dde5;
+			border: 3px dashed #4f5f6f;
+			text-align: center;
+			b{
+				display: block;
+				padding: 5px 0 2px 0;
+				font-size: 20px;
+				color: #161717;
+				font-weight: bold;
+			}
+			small{
+				font-size: 15px;
+				color: #4f5f6f;
+				font-weight: bold;
+				display: block;
+			}
+		}
+	}
+	.domains_list{
+		@include povh('');
+		vertical-align: top;
+		padding-bottom: 68px;
+		border-bottom: 1px dashed #4f5f6f;
+		.col-md-4{
+			padding: 0 4px;
+		}
+		.domains_list_item{
+			margin: 3px;
+			height: 210px;
+			padding: 30px 20px;
+			background-color: #fff;
+			box-shadow: 0 0 5px rgba(0,0,0,.05);
+			box-sizing: border-box;
+			h6{
+				font-size: 30px;
+				color: #161717;
+				font-weight: bold;
+				padding-bottom: 18px;
+			}
+			p{
+				font-size: 15px;
+				color: #4f5f6f;
+				font-weight: bold;
+			}
+			label{
+				display: block;
+				text-align: center;
+				font-size: 20px;
+				font-weight: bold;
+				color: #4f5f6f;
+				input{
+					width: 30px;
+					height: 30px;
+				}
+				span{
+					position: relative;
+					left: 10px;
+					top: -7px;
+				}
+			}
+		}
+	}
+	.nameservers_wrap{
+		padding: 34px 0 71px 0;
+		input{
+			display: block;
+			margin-bottom: 10px;
+			border-radius: 10px;
+		}
+		.text-center{
+			padding: 45px 0 0 0;
+		}
+		.btn{
+			background: none;
+			width: 140px;
+			height: 30px;
+			line-height: 1;
+			border-radius: 15px;
+			border: 2px solid #54c5e3;
+			font-size: 15px;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: #54c5e3;
+		}
+	}	
+		.subtitle{
+			font-size: 30px;
+			color: #161717;
+			padding-bottom: 25px;
+		}
+/*-----end-domains_configurations---------*/
+
+/*-----------my_details---------*/
+.profile_details{
+	@include povh('');
+	padding-bottom: 70px;
+	.text-center{
+		padding: 45px 0 0 0;
+		.btn{
+			margin: 0 10px;
+			background: none;
+			width: 140px;
+			height: 30px;
+			line-height: 1;
+			border-radius: 15px;
+			border: 2px solid #54c5e3;
+			font-size: 15px;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: #54c5e3;
+			&.cancel{
+				color: #d6dde5;
+				border-color: #d6dde5;
+			}
+		}
+	}	
+}
+	.profile_item{
+		height: 40px;
+		width: 100%;
+		margin-bottom: 10px;
+		@include povh('');
+		border-radius: 10px;
+		background-color: #fff;
+		label{
+			float: left;
+			width: 35%;
+			height: 30px;
+			margin: 5px 0 0 0;
+			box-sizing: border-box;
+			padding: 7px 10px;
+			border-right: 1px solid #d6dde5;
+		}
+	}
+		.profile_form_item{
+			width: auto;
+			@include povh('');
+			input, select{
+				border-radius: 0;
+				background:none;
+				font-size: 15px;
+				font-weight: bold;
+				color: #4f5f6f;
+				width: 100%;
+			}
+		}
+/*-----------end-my_details---------*/

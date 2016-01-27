@@ -105,10 +105,11 @@ h6{font-size:14px;}
     @include button_gradient_hover('');
   }
 }
-input[type=text], input[type=email],  input[type=password], input[type=tel], input[type=search], textarea{
+input[type=text], input[type=email],  input[type=password], input[type=tel], input[type=search], select, textarea{
    @include input('');
    &:focus{
      @include input_focus('');
+     outline: none;
    }
    &.red_input{
       box-shadow: 0 0 2px  #ff2d50;
@@ -120,6 +121,9 @@ input:-moz-placeholder {color: inherit;}
 textarea{
   height: 90px;
   padding-top: 5px;
+}
+button{
+  outline: none;
 }
 //end buttons inputs
 

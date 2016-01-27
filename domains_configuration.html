@@ -37,6 +37,14 @@
 		<a href="/" class="logo"><img src="img/logo.png" alt=""></a>
 		<div class="sidebar_list">
 			<ul class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				<li class="panel panel-default">
+					<a role="button" data-parent="#accordion" href="#drop_sidebar_purchase" aria-expanded="true" class="js_open_menu collapsed"  data-toggle="collapse" data-target="#drop_sidebar_purchase"  aria-controls="drop_sidebar_purchase" >My purchases</a>
+					<ul class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" id="drop_sidebar_purchase">
+						<li><a href="#">My Apps & Desktops</a></li>
+						<li><a href="#">My Domain names</a></li>
+						<li><a href="#">My Hosting</a></li>
+					</ul>
+				</li>
 				<li><a href="#">Our services</a></li>
 				<li class="panel panel-default">
 					<a role="button" data-parent="#accordion" href="#drop_sidebar" aria-expanded="true" class="js_open_menu collapsed"  data-toggle="collapse" data-target="#drop_sidebar"  aria-controls="drop_sidebar" >Buy</a>
@@ -95,58 +103,70 @@
 
 	<!--main-->
 	<div class="main">
-		<div class="main_info container-fluid">
-			<div class="row main_info_top">
-				<div class="col-md-6">
-					<h2><b>Say hello</b> to the future of <br>business computing</h2>
-					<p>Cloud desktops used to be out of reach for small- to medium-sized businesses. Not anymore. Uniqube’s flexible and transparent desktop solutions fit your business, while giving you the same benefits and cost savings available to large enterprises.</p>
+		<div class="container-fluid">
+			<div class="title">Domains Configuration</div>
+			<div class="domains_wrap">
+				<p>Please review your domain name selections and any addons that are available for them.</p>
+				<span class="blue"><a href="#">free-free3x.com</a></span>
+				<div class="domains_info">
+					<div>
+						<b>Registration Period </b>
+						<small>1 Year/s</small>
+					</div>
+					<div>
+						<b>Hosting</b>
+						<small>No Hosting </small>
+					</div>
 				</div>
-				<div class="col-md-6">
-					<img src="http://lorempixel.com/540/280/" alt="">
+				<div class="domains_list row">
+					<div class="col-md-4">
+						<div class="domains_list_item">
+							<h6>DNS Management</h6>
+							<p>External DNS Hosting can help speed up your website and improve availability with reduced redundancy.</p>
+							<label>
+								<input type="checkbox">
+								<span>Add to Cart</span>
+							</label>
+						</div>	
+					</div>
+					<div class="col-md-4">
+						<div class="domains_list_item">
+							<h6>ID Protection</h6>
+							<p>Protect your personal information and reduce the amount of spam to your inbox by enabling ID Protection.</p>
+							<label>
+								<input type="checkbox">
+								<span>Add to Cart</span>
+							</label>
+						</div>	
+					</div>
+					<div class="col-md-4">
+						<div class="domains_list_item">
+							<h6>Email Forwarding</h6>
+							<p>Get emails forwarded to alternate email addresses of your choice so that you can monitor all from a single account.</p>
+							<label>
+								<input type="checkbox">
+								<span>Add to Cart</span>
+							</label>
+						</div>	
+					</div>
 				</div>
-			</div>
-			<div class="row main_info_services">
-				<div class="col-md-4">
-					<figure>
-						<img src="http://lorempixel.com/160/80" alt="">
-						<figcaption>Desktops and apps</figcaption>
-					</figure>
-					<p>Choose what you need—full desktops, or just apps—and don’t pay for what you don’t. Pick the plan and apps you want.</p>
-				</div>
-				<div class="col-md-4">
-					<figure>
-						<img src="http://lorempixel.com/160/80" alt="">
-						<figcaption>Securely access</figcaption>
-					</figure>
-					<p>We built in security by design, not as an afterthought. With our multitenant environment, you have your own logical segregated space.</p>
-				</div>
-				<div class="col-md-4">
-					<figure>
-						<img src="http://lorempixel.com/160/80" alt="">
-						<figcaption>Simple, convenient, predictable</figcaption>
-					</figure>
-					<p>Forget complicated networks and high-cost infrastructure. Rely on Deskserve to provide all your computing and software needs at affordable rates.</p>
-				</div>
-			</div>	
-			<div class="row built">
-				<div class="col-md-4">
-					<section>
-						<h6>Built For You</h6>
-						<p>We developed Deskserve to fulfil a unique need among small and medium-sized business. It used to be that cloud desktop and mobile platforms simply weren’t accessible to SMEs, much less cost-effective. Deskserve fulfils this drastic gap in internal effectiveness and corporate operations by providing as-you-need desktop PCs and cloud-based software that fits your precise budget and team layout.</p>
-						<p>Don’t be chained down by underperforming computer rigs and unnecessary expenses. Simply get the hardware and software you need, only when you need it, through Deskserve.</p>
-					</section>	
-				</div>
-				<div class="col-md-4">
-					<section>
-						<h6>Built to Break Tradition</h6>
-						<p>Cloud networks haven’t just freed businesses to enjoy better back-ups and mobile data access—the cloud introduces a whole new company paradigm, enabling you to cut costs and increase productivity across the board. Rather than being held back by obsolete computer setups and non-dedicated IT personnel, you can get comprehensive access to proprietary tools while knowing you’re only paying for the service you need.</p>
-					</section>	
-				</div>
-				<div class="col-md-4">
-					<section>
-						<h6>Built for Success</h6>
-						<p>With tech and operational costs slashed and your task force equipped to work no matter where they are, your business can experience unparalleled growth and profitability. Enjoy an enormous reduction in downtime thanks to our constant support, faster customer response times, and organisational flexibility. Deskserve empower you to employ IT strategies and resources in bold new ways.</p>
-					</section>	
+				<div class="nameservers_wrap">
+					<div class="subtitle">Nameservers</div>
+					<p>If you want to use custom nameservers then enter them below. By default, new domains <br> will use our nameservers for hosting on our network.</p>
+					<div class="row">
+						<div class="col-md-4">
+							<input type="text" value="dns1.registrar-servers.com">
+							<input type="text" value="dns1.registrar-servers.com">
+						</div>
+						<div class="col-md-4">
+							<input type="text" value="dns1.registrar-servers.com">
+							<input type="text" value="dns1.registrar-servers.com">
+						</div>
+						<div class="col-md-4">
+							<input type="text" value="dns1.registrar-servers.com">
+						</div>
+					</div>
+					<div class="text-center"><button class="btn">Continue</button></div>
 				</div>
 			</div>
 		</div>
