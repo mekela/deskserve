@@ -24,15 +24,16 @@ overflow: hidden;
 }
 
 @mixin input($input){
-  width: 300px;
-  height: 25px;
+  width: 280px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #fff;
   box-sizing: border-box;
-  padding: 0 5px;
-  color: #000;
-  font-size: 14px;
+  padding: 0 15px;
+  color: #b4b9bc;
+  font-size: 15px;
   font-family: $ffamily;
-  border: 1px solid #000;
-  border-radius: 3px;
+  border:none;
 }
 @mixin input_focus($input_focus){
   box-shadow: 0 0 2px #99e6f9;
