@@ -514,6 +514,7 @@
 				font-weight: bold;
 				text-transform: uppercase;
 				color: #54c5e3;
+				text-decoration: none;
 				&.cancel{
 					color: #d6dde5;
 					border-color: #d6dde5;
@@ -1010,3 +1011,201 @@
 		}
 	}
 /*-----------end-our_tariffs---------*/
+
+/*-----------services---------*/
+.services_all{
+	@include povh('');
+	p{
+		padding-bottom: 80px;
+	}
+	.blockquote{
+		margin-left: 0;
+	}
+	.services_block{
+		width: 100%;
+		border: none;
+	}
+}
+/*-----------end-services---------*/
+
+/*-----------transfer_register_domain---------*/
+.choose_domain{
+	border-bottom: 1px dashed #4f5f6f;
+	padding-bottom: 35px;
+	margin-bottom: 30px;
+	&:last-child{
+		border-bottom: none;
+	}
+}
+	.choose_domain_form{
+		padding: 20px 0 0 0;
+		vertical-align: top;
+		span{
+			width: 60px;
+			height: 40px;
+			display: inline-block;
+			border-radius: 10px;
+			vertical-align: top;
+			text-align: center;
+			line-height: 40px;
+			color: #4f5f6f;
+			font-size: 15px;
+			font-weight: bold;
+			margin: 0 8px 0 0;
+			background-color: #d6dde5;
+		}
+		input{
+			border-radius: 10px;
+			width: 425px;
+		}
+		select{
+			box-sizing: border-box;
+			width: 80px;
+			margin: 0 0 0 10px;
+			height: 40px;
+			padding: 0 7px;
+			color: #4f5f6f;
+			font-size: 15px;
+			font-weight: bold;
+			border-radius: 10px;
+			background-color: #d6dde5;
+		}
+	}
+/*------end-transfer_register_domain-----*/
+
+/*------welcome_back-----*/
+.profile_info_wrap{
+	@include povh('');
+	.profile_info_left{
+		width: auto;
+		background-color: #fff;
+		box-shadow: 0 0 5px rgba(0,0,0,.05);
+		box-sizing: border-box;
+		padding: 20px 16px;
+		h6{
+			font-size: 30px;
+			font-weight: bold;
+			padding-bottom: 14px;
+			color: #161717;
+		}
+		div{
+			@include povh('');
+			padding-bottom: 10px;
+			label{
+				width: 35%;
+				float: left;
+				height: 29px;
+				line-height: 29px;
+				border-right: 1px solid #d6dde5;
+				font-size: 15px;
+				font-weight: bold;
+				color: #d6dde5;
+			}
+			input{
+				overflow: hidden;
+				width: auto;
+				height: 29px;
+				border-radius: 0;
+				outline: none !important;
+				box-shadow: none;
+				font-size: 15px;
+				font-weight: bold;
+				color: #4f5f6f;
+			}
+			.button{
+				width: 140px;
+				height: 30px;
+				text-align: center;
+				margin: 15px auto 0 auto;
+				line-height: 0.9;
+				border-radius: 15px;
+				border: #54c5e3 2px solid ; 
+				font-size: 15px;
+				font-weight: bold;
+				text-transform: uppercase;
+				color: #54c5e3;
+				background: none;
+			}
+		}	
+	}
+}
+		.register_form{
+			padding: 18px 0 0 0;
+			.btn{
+				background:#54c5e3;
+				color: #fff;
+				width: auto;
+				padding: 0 12px;
+				height: 30px;
+				text-transform: uppercase;
+			}
+		}
+		.your_domain_info{
+			border: 3px dashed #4f5f6f;
+			border-radius: 15px;
+			margin-bottom: 20px;
+			dt{
+				background:#d6dde5;
+				padding: 16px;
+				border-radius: 14px 14px 0 0;
+				text-align: right;
+				span{
+					text-align: left;
+					float: left;
+					width: 60%;
+					line-height: 26px;
+					font-size: 30px;
+					color: #161717;
+				}
+				a{
+					font-size: 15px;
+					font-weight: bold;
+					text-transform: uppercase;
+					color: #54c5e3;
+					width: 140px;
+					height: 30px;
+					border-radius: 15px;
+					display: inline-block;
+					text-align: center;
+					text-decoration: none;
+					line-height: 26px;
+					border: 2px solid #54c5e3;
+				}
+			}
+			dd{
+				padding: 14px 31px;
+				ul{
+					-moz-column-count: 4;
+					-moz-column-gap: 25px;
+					-webkit-column-count: 4;
+					-webkit-column-gap: 25px;
+					column-count: 4;
+					column-gap: 25px;
+				}
+			}
+		}
+.login_list{
+	background:#fff;
+	text-align: left;
+	padding: 0 10px;
+	&:before{
+		@include arr(15,15, #ffffff, t)
+	}
+	li{
+		padding: 10px 0;
+		border-bottom: 1px solid #d6dde5;
+		&:last-child{
+			border-bottom: none;
+		}
+	}
+	a{
+		font-size: 15px;
+		color: #4f5f6f;
+		font-weight: bold;
+		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+/*------end-welcome_back-----*/
