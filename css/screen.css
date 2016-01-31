@@ -4389,3 +4389,45 @@ button {
 }
 
 /*------end-welcome_back-----*/
+/*------who_we_help-----*/
+.help_wrap {
+  background: #fff;
+  box-sizing: border-box;
+  padding: 23px 60px;
+  padding-left: 70px;
+  margin-left: -75px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  width: calc(100% + 160px);
+  margin-bottom: 59px;
+}
+
+.help_wrap h6 {
+  font-weight: bold;
+  font-size: 30px;
+  color: #161717;
+  padding-bottom: 45px;
+}
+
+.help_wrap .col-md-6 {
+  overflow: hidden;
+}
+
+.help_wrap .your_domain_info {
+  border-color: #d6dde5;
+}
+
+.help_wrap .your_domain_info dt {
+  background: #eff3f6;
+  text-align: left;
+}
+
+.help_wrap .your_domain_info dt span {
+  float: none;
+  width: 100%;
+  text-align: left;
+  display: block;
+}
+
+/*------end-who_we_help-----*/
+/*------why_deskserve-----*/
+/*------end-why_deskserve-----*/
