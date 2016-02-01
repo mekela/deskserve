@@ -4601,4 +4601,73 @@ button {
   border: 2px solid #4f5f6f;
 }
 
+.cart_table tfoot td {
+  padding: 8px 31px;
+  font-size: 20px;
+  color: #4f5f6f;
+  background: #e1e8f0;
+}
+
+.cart_table tfoot td:last-child {
+  text-align: right;
+}
+
+.cart_table tfoot tr:first-child td {
+  border-top: 9px solid #eff3f6;
+}
+
+.cart_table tfoot tr:last-child td {
+  font-size: 25px;
+  background: #4f5f6f;
+  color: #fff;
+}
+
+.cart_bottom {
+  padding: 18px 0 0 0;
+  padding-bottom: 70px;
+}
+
+.cart_bottom .btn {
+  margin-top: 15px;
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  width: 280px;
+  height: 70px;
+  text-decoration: none;
+  border-radius: 35px;
+  background-color: #54c5e3;
+}
+
+.cart_bottom .btn:hover {
+  opacity: 0.8;
+}
+
+.promo input {
+  display: block;
+  width: 100%;
+  height: 40px;
+}
+
+.promo label {
+  display: block;
+  font-size: 25px;
+  color: #161717;
+  padding-bottom: 14px;
+}
+
+.promo .button {
+  height: 30px;
+  font-size: 15px;
+  line-height: 30px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.promo .text-right {
+  padding: 19px 0 0 0;
+}
+
 /*------end-your-cart-----*/
