@@ -2881,6 +2881,7 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
 input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=search]:focus, select:focus, textarea:focus {
   box-shadow: 0 0 2px #99e6f9;
   outline: none;
+  box-shadow: inset 0px 1px 0px #54c5e3, inset 0px -1px 0px #54c5e3;
 }
 
 input[type=text].red_input, input[type=email].red_input, input[type=password].red_input, input[type=tel].red_input, input[type=search].red_input, select.red_input, textarea.red_input {
@@ -3005,20 +3006,28 @@ button {
 }
 
 .sidebar_list {
-  padding: 30px;
+  padding: 30px 0;
 }
 
 .sidebar_list ul li {
-  padding-bottom: 30px;
+  padding: 0px 0px;
+  padding-top: 0;
+  padding-bottom: 10px;
 }
 
 .sidebar_list ul li a {
   color: #fff;
+  display: block;
+  padding: 0 30px;
+  height: 55px;
+  line-height: 55px;
   font-size: 20px;
   text-decoration: none;
 }
 
 .sidebar_list ul li a:hover {
+  background: #54c5e3;
+  color: #fff;
   box-shadow: none;
 }
 
@@ -3028,22 +3037,30 @@ button {
 
 .sidebar_list ul ul li {
   position: relative;
-  padding: 0 0 20px 20px;
+  padding: 0 0 0px 0px;
 }
 
 .sidebar_list ul ul li:first-child {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .sidebar_list ul ul li a {
   font-size: 15px;
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  padding-left: 50px;
+}
+
+.sidebar_list ul ul li a:hover {
+  background: #394657;
 }
 
 .sidebar_list ul ul li:before {
   content: '';
   position: absolute;
-  left: 0px;
-  top: 7px;
+  left: 30px;
+  top: 15px;
   background: #fff;
   border-radius: 50%;
   width: 7px;
@@ -3084,6 +3101,11 @@ button {
 
 .social a {
   padding: 0 12px;
+  transition: all 0.7s ease;
+}
+
+.social a:hover {
+  color: #54c5e3;
 }
 
 /*--------end-sidebar----------*/
@@ -3131,12 +3153,8 @@ button {
 }
 
 .your_cart:hover {
-  background: #53b9d6;
+  background: #394657;
   color: #fff;
-}
-
-.your_cart:hover i {
-  color: #4f5f6f;
 }
 
 .login_wrap {
@@ -3155,6 +3173,10 @@ button {
   border: none;
   font-size: 18px;
   color: #fff;
+}
+
+.login_wrap button:hover {
+  background: #4ab2cd;
 }
 
 .login_wrap button img {
@@ -3246,7 +3268,7 @@ button {
 }
 
 .login_btn .button:hover {
-  opacity: 0.8;
+  background: #394657;
 }
 
 .login_btn span {
@@ -3406,6 +3428,10 @@ button {
   padding: 8px 24px;
 }
 
+.contacts_wrap .button:active {
+  background: #394657;
+}
+
 .contacts_wrap .col-md-4 {
   padding-left: 3px;
 }
@@ -3551,17 +3577,37 @@ button {
   font-size: 20px;
   font-weight: bold;
   color: #4f5f6f;
+  position: relative;
 }
 
 .domains_list .domains_list_item label input {
-  width: 30px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
   height: 30px;
+  opacity: 0;
 }
 
 .domains_list .domains_list_item label span {
   position: relative;
   left: 10px;
   top: -7px;
+}
+
+.domains_list .domains_list_item label span:before {
+  width: 30px;
+  height: 32px;
+  content: '';
+  position: relative;
+  top: 8px;
+  left: -10px;
+  display: inline-block;
+  background: url(../img/icons/checkbox.png) no-repeat top right;
+}
+
+.domains_list .domains_list_item label input:checked + span:before {
+  background: url(../img/icons/checkbox.png) no-repeat top left;
 }
 
 .nameservers_wrap {
@@ -3624,6 +3670,11 @@ button {
   text-decoration: none;
 }
 
+.center_buttons .btn:hover {
+  color: #fff;
+  background: #54c5e3;
+}
+
 .center_buttons .btn.cancel {
   color: #d6dde5;
   border-color: #d6dde5;
@@ -3664,6 +3715,10 @@ button {
   font-weight: bold;
   color: #4f5f6f;
   width: 100%;
+}
+
+.profile_form_item input:focus, .profile_form_item select:focus {
+  box-shadow: none;
 }
 
 /*-----------end-my_details---------*/
@@ -3896,7 +3951,7 @@ button {
 }
 
 .domain_table td .selected:hover {
-  opacity: 0.8;
+  background: #394657;
 }
 
 .domain_table td .selected_drop {
@@ -3936,12 +3991,11 @@ button {
 }
 
 .domain_table td .selected_drop ul li:hover {
-  background: #4f5f6f;
-  color: #fff;
+  background: #eff3f6;
 }
 
 .domain_table td .selected_drop ul li:hover a {
-  color: #fff;
+  color: #4f5f6f;
 }
 
 .domain_table td .selected_drop ul li a {
@@ -3960,7 +4014,7 @@ button {
 }
 
 .domain_table td .selected_drop ul li a:hover {
-  color: #fff;
+  color: #4f5f6f;
 }
 
 .domain_table td .drop_table {
@@ -4387,6 +4441,11 @@ button {
   background: none;
 }
 
+.profile_info_wrap .profile_info_left div .button:hover {
+  background: #54c5e3;
+  color: #fff;
+}
+
 .register_form {
   padding: 18px 0 0 0;
 }
@@ -4441,6 +4500,11 @@ button {
   text-decoration: none;
   line-height: 26px;
   border: 2px solid #54c5e3;
+}
+
+.your_domain_info dt a:hover {
+  background: #54c5e3;
+  color: #fff;
 }
 
 .your_domain_info dd {
@@ -4602,6 +4666,11 @@ button {
   border: 2px solid #54c5e3;
 }
 
+.cart_wrap .text-right a:hover {
+  background: #54c5e3;
+  color: #fff;
+}
+
 .cart_table {
   padding: 17px 0;
 }
@@ -4702,6 +4771,12 @@ button {
   border-radius: 15px;
   background: none;
   border: 2px solid #4f5f6f;
+}
+
+.cart_table tbody .edit a.btn:hover {
+  color: #fff;
+  text-decoration: none;
+  background: #4f5f6f;
 }
 
 .cart_table tfoot td {
