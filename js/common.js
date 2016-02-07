@@ -8,11 +8,14 @@ $(document).ready(function() {
 		}
 	});
 	
-	//bxslider
-	$('.bxslider').bxSlider({
-	  nextSelector: '#slider-next',
-	  prevSelector: '#slider-prev',
-	  nextText: 'Onward →',
-	  prevText: '← Go back'
-	});
+	//show sidebar
+	$(".toggle_sidebar").click(function () {
+      $('.sidebar').addClass('js_visible');
+      $('.sid_mobile_overlay').show();
+    });
+    $(".sid_mobile_overlay").click(function () {
+      $('.sidebar').removeClass('js_visible');
+      $( this ).hide();
+    });
+	
 });

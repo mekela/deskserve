@@ -108,7 +108,9 @@
  			}
  		}
  	}
-	 	
+	.sid_mobile, .sid_mobile_overlay{
+		display: none;
+	}
 	 	
  /*--------end-sidebar----------*/
 
@@ -610,6 +612,7 @@
 	.profile_item{
 		height: 40px;
 		width: 100%;
+		border: 1px solid #fff;
 		margin-bottom: 10px;
 		@include povh('');
 		border-radius: 10px;
@@ -619,11 +622,32 @@
 			width: 35%;
 			height: 30px;
 			color: #d6dde5;
-			margin: 5px 0 0 0;
+			margin: 4px 0 0 0;
 			box-sizing: border-box;
-			padding: 7px 10px;
+			position: relative;
+			padding: 6px 10px;
 			font-size: 15px;
 			border-right: 1px solid #d6dde5;
+		}
+		&:hover{
+			border: 1px solid #54c5e3;
+		}
+		&.error{
+			border-color: #e35468;
+			label{
+				&:before{
+					content: "\f06a";
+					display: inline-block;
+				    font: normal normal normal 18px/1 FontAwesome;
+				    font-size:18px;
+				    color: #e35468;
+				    text-rendering: auto;
+				    -webkit-font-smoothing: antialiased;
+				    position: absolute;
+				    right: 8px;
+				    top: 7px
+				}
+			}	
 		}
 	}
 		.profile_form_item{

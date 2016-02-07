@@ -1,17 +1,146 @@
 // Normally mainpage styles
 // You can read about usage in https://github.com/paranoida/sass-mediaqueries 
 
-//styles for custom device width
-@include mq($max-width: 1000px) {
-  
+//styles for 1250 width
+@include mq($max-width: 1250px) {
+  .sidebar{
+  	width: 200px;
+  }
+  	.logo img{
+  		max-width: 90%;
+  	}
+  .main{
+	padding: 20px 30px 20px 230px;
+   }
+   		.contacts_wrap {
+   			textarea, input{
+   				width: 100%;
+   			}
+   		}
+   		.main_info_services p{
+   			width: auto;
+   		}
 }
 
-//styles for ipad
-@include ipad {
-	
+//styles for 990 width
+@include mq($max-width: 990px) {
+	.sidebar{
+		display: none;
+		&.js_visible{
+			display: block;
+			overflow: auto;
+		}
+		.social{
+			position: static;
+		}
+	}
+		.sid_mobile{
+			position: fixed;
+			top: 0;
+			left: 0;
+			display: block;
+			z-index: 20;
+			background:#4f5f6f;
+			width: 64px;
+			height: 100vh;
+			border-right: 1px solid #27303c;
+		}
+			.toggle_sidebar{
+				text-align: center;
+				color: #fff;
+				padding: 10px 0;
+				font-size: 40px;
+			}
+		.sid_mobile_overlay{
+			position: fixed;
+			top: 0;
+			display: none;
+			left: 0;
+			z-index: 100;
+			width: 100%;
+			height: 100%;
+			background:rgba(255,255,255, 0.7);
+		}
+	.main{
+	padding: 20px 15px 20px 75px;
+   }
+   	.contacts_wrap .contacts_form, .contacts_txt{
+   		height: auto;
+   	}
 }
 
-//styles for iphone
-@include iphone5 {
+//styles for 768 width
+@include mq($max-width: 768px) {
+	.built{
+		.col-md-4{
+			margin-bottom: 10px;
+		}
+	}
+	.built section{
+		min-height: auto;
+	}
+	.main_info h2{
+		font-size: 30px;
+	}
+	.contacts_wrap .col-md-4, .contacts_wrap .col-md-8{
+		padding-left: 3px;
+		margin-bottom: 19px;
+		padding-right: 3px;
+	}
+	.sid_mobile{
+		width: 40px;
+	}
+	.main{
+		padding-left: 50px;
+	}
+	.toggle_sidebar{
+		font-size: 33px;
+	}
+	.footer address{
+		padding-right: 10px;
+		font-size: 11px;
+	}
+}
 
-} 
+//styles for 600 width
+@include mq($max-width: 600px) {
+	.main_info_top{
+		.col-md-6{
+			width: 100%;
+		}
+		.col-md-6:last-child{
+			display: none;
+		}
+	}
+	.main_info_services{
+		.col-md-4{
+			width: 100%;
+		}
+	}
+	.contacts_form{
+		.col-md-6{
+			width: 100%;
+		}
+	}
+	.your_cart{
+		width: 120px;
+		margin-right: 5px;
+		span{
+			display: none;
+		}
+	}
+	.login_wrap{
+		width: 120px;
+		margin-right: 5px;
+		button{
+			width: 120px;
+			font-size: 17px;
+			img{
+				display: none;
+			}
+		}
+	}
+	.login_block{
+		z-index: 21;
+	}
+}
