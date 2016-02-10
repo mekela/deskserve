@@ -2868,7 +2868,7 @@ h6 {
 input[type=text], input[type=email], input[type=password], input[type=tel], input[type=search], select, textarea {
   width: 280px;
   height: 40px;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: #fff;
   box-sizing: border-box;
   padding: 0 15px;
@@ -4891,6 +4891,18 @@ button {
 }
 
 /*------end-your-cart-----*/
+@media only screen and (min-width: 1550px) {
+  .main_info_top img {
+    width: 100%;
+  }
+  .contacts_wrap textarea, .contacts_wrap input {
+    width: 100%;
+  }
+  .contacts_wrap .button {
+    width: auto;
+  }
+}
+
 @media only screen and (max-width: 1250px) {
   .sidebar {
     width: 200px;
@@ -4953,9 +4965,18 @@ button {
   .contacts_wrap .contacts_form, .contacts_txt {
     height: auto;
   }
+  .contacts_wrap {
+    padding-bottom: 0;
+  }
+  .main_info {
+    margin-bottom: 10px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+  .button {
+    font-size: 15px;
+  }
   .built .col-md-4 {
     margin-bottom: 10px;
   }
@@ -4979,7 +5000,11 @@ button {
   .toggle_sidebar {
     font-size: 33px;
   }
+  .footer {
+    height: auto;
+  }
   .footer address {
+    padding: 15px 0;
     padding-right: 10px;
     font-size: 11px;
   }
@@ -4999,11 +5024,14 @@ button {
     width: 100%;
   }
   .your_cart {
-    width: 120px;
+    width: 125px;
     margin-right: 5px;
+    height: 30px;
+    font-size: 11px;
+    line-height: 30px;
   }
   .your_cart span {
-    display: none;
+    margin-left: 8px;
   }
   .login_wrap {
     width: 120px;
@@ -5011,12 +5039,16 @@ button {
   }
   .login_wrap button {
     width: 120px;
-    font-size: 17px;
+    height: 30px;
+    font-size: 11px;
   }
   .login_wrap button img {
-    display: none;
+    width: 20px;
   }
   .login_block {
     z-index: 21;
+  }
+  .contacts_wrap .button {
+    width: auto;
   }
 }

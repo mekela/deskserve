@@ -1,6 +1,23 @@
 // Normally mainpage styles
 // You can read about usage in https://github.com/paranoida/sass-mediaqueries 
 
+
+
+//style for big screen
+@include mq($min-width: 1550px) {
+	.main_info_top{
+		img{
+			width: 100%;
+		}
+	}
+	.contacts_wrap textarea, .contacts_wrap input{
+		width: 100%;
+	}
+	.contacts_wrap .button{
+		width: auto;
+	}
+}
+
 //styles for 1250 width
 @include mq($max-width: 1250px) {
   .sidebar{
@@ -67,10 +84,19 @@
    	.contacts_wrap .contacts_form, .contacts_txt{
    		height: auto;
    	}
+   	.contacts_wrap{
+   		padding-bottom: 0;
+   	}
+   	.main_info{
+   		margin-bottom: 10px;
+   	}
 }
 
 //styles for 768 width
 @include mq($max-width: 768px) {
+	.button{
+		font-size: 15px;
+	}
 	.built{
 		.col-md-4{
 			margin-bottom: 10px;
@@ -96,7 +122,11 @@
 	.toggle_sidebar{
 		font-size: 33px;
 	}
+	.footer{
+		height: auto;
+	}
 	.footer address{
+		padding: 15px 0;
 		padding-right: 10px;
 		font-size: 11px;
 	}
@@ -123,10 +153,13 @@
 		}
 	}
 	.your_cart{
-		width: 120px;
+		width: 125px;
 		margin-right: 5px;
+		height: 30px;
+		font-size: 11px;
+		line-height: 30px;
 		span{
-			display: none;
+			margin-left: 8px;
 		}
 	}
 	.login_wrap{
@@ -134,13 +167,20 @@
 		margin-right: 5px;
 		button{
 			width: 120px;
-			font-size: 17px;
+			height: 30px;
+			font-size: 11px;
 			img{
-				display: none;
+				width: 20px;
 			}
 		}
 	}
 	.login_block{
 		z-index: 21;
+	}
+
+	.contacts_wrap {
+		.button{
+			width: auto;
+		}
 	}
 }
