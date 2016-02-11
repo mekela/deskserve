@@ -90,6 +90,20 @@
    	.main_info{
    		margin-bottom: 10px;
    	}
+
+   	.services_block figure:before{
+   		display: none;
+   	}
+   		.services_block figure{
+   			width: 100%;
+   			height: auto;
+   			figcaption{
+   				padding: 30px 0;
+   				width: auto;
+   				font-size: 13px;
+   				height: auto;
+   			}
+   		}
 }
 
 //styles for 768 width
@@ -129,6 +143,24 @@
 		padding: 15px 0;
 		padding-right: 10px;
 		font-size: 11px;
+	}
+
+	.services_wrap {
+		.services_block{
+			width: 100%;
+			.row{
+				float: left;
+				width: 50%;
+
+			}
+			figure{
+				border: none;
+			}
+			blockquote{
+				width: 50%;
+				float: right;
+			}
+		}
 	}
 }
 
@@ -181,6 +213,23 @@
 	.contacts_wrap {
 		.button{
 			width: auto;
+		}
+	}
+
+	.services_wrap {
+		.services_block{
+			width: 100%;
+			.row{
+				float: none;
+				width: auto;
+			}
+			figure{
+				border: none;
+			}
+			blockquote{
+				width: auto;
+				float: none;
+			}
 		}
 	}
 }

@@ -4971,6 +4971,19 @@ button {
   .main_info {
     margin-bottom: 10px;
   }
+  .services_block figure:before {
+    display: none;
+  }
+  .services_block figure {
+    width: 100%;
+    height: auto;
+  }
+  .services_block figure figcaption {
+    padding: 30px 0;
+    width: auto;
+    font-size: 13px;
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -5007,6 +5020,20 @@ button {
     padding: 15px 0;
     padding-right: 10px;
     font-size: 11px;
+  }
+  .services_wrap .services_block {
+    width: 100%;
+  }
+  .services_wrap .services_block .row {
+    float: left;
+    width: 50%;
+  }
+  .services_wrap .services_block figure {
+    border: none;
+  }
+  .services_wrap .services_block blockquote {
+    width: 50%;
+    float: right;
   }
 }
 
@@ -5050,5 +5077,19 @@ button {
   }
   .contacts_wrap .button {
     width: auto;
+  }
+  .services_wrap .services_block {
+    width: 100%;
+  }
+  .services_wrap .services_block .row {
+    float: none;
+    width: auto;
+  }
+  .services_wrap .services_block figure {
+    border: none;
+  }
+  .services_wrap .services_block blockquote {
+    width: auto;
+    float: none;
   }
 }
