@@ -32,6 +32,13 @@
 <body>
 <!--wrapper-->
 <div class="wrapper">
+	<!--sidebar-mobile-->
+	<div class="sid_mobile">
+		<div class="toggle_sidebar"><i class="fa fa-bars"></i></div>
+	</div>
+	<div class="sid_mobile_overlay"></div>
+	<!--end-sidebar-mobile-->
+
 	<!--sidebar-->
 	<aside class="sidebar">
 		<a href="/" class="logo"><img src="img/logo.png" alt=""></a>
@@ -107,7 +114,7 @@
 			<div class="title">My Domain names</div>
 			<div class="domain_names_wrap">
 				<div class="domain_buttons row">
-					<div class="col-md-5">
+					<div class="col-md-5 col-sm-6">
 						<div class="domain_status">
 							<input type="radio" checked id="status1" name="status">
 							<i></i>
@@ -121,153 +128,155 @@
 							<span>9</span>
 						</div>
 					</div>
-					<div class="col-md-7 text-right">
+					<div class="col-md-7 text-right col-sm-6">
 						<a href="#">Renew</a>
 						<a href="#">Register a new Domain</a>
 						<a href="#">Transfer in a Domain</a>
 					</div>
 				</div>
-				<div class="domain_search row">
-					<div class="col-md-6">Shown 7 of 25 entries</div>
-					<div class="col-md-6 text-right">
-						<input type="text" placeholder="Search">
+				<div class="domain_table_outer">
+					<div class="domain_search row">
+						<div class="col-md-6 col-sm-5 col-xs-5">Shown 7 of 25 entries</div>
+						<div class="col-md-6 col-sm-7 col-xs-7 text-right">
+							<input type="text" placeholder="Search">
+						</div>
 					</div>
-				</div>
-				<div class="domain_table row">
-					<table>
-						<tr>
-							<th><span class="active_top">Name</span></th>
-							<th><span class="active_bottom">Reg Date</span></th>
-							<th><span>Next Due</span></th>
-							<th><span>Auto Renew</span></th>
-							<th><span>Status</span></th>
-							<th><span></span></th>
-						</tr>
-						<tr>
-							<td>www.domain-name.com</td>
-							<td>02.03.2016</td>
-							<td>---</td>
-							<td>---</td>
-							<td>---</td>
-							<td>
-								<div class="drop_table">
-								<a  data-toggle="collapse" data-target="#selected_drop" aria-expanded="true" aria-controls="selected_drop"  class="selected">With Selected</a>
-								<div id="selected_drop" class="selected_drop collapse">
-									<ul>			  
-										<li>
-											<a href="#">
-												<img src="http://lorempixel.com/20/20/" alt="">
-												Manage Nameservers
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<img src="http://lorempixel.com/20/20/" alt="">
-												Auto Renewal Status
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<img src="http://lorempixel.com/20/20/" alt="">
-												Registrar Lock Status
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<img src="http://lorempixel.com/20/20/" alt="">
-												Edit Contact Information
-											</a>
-										</li>
-									</ul>
-								</div>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>www.domain-name.com</td>
-							<td>02.03.2016</td>
-							<td>---</td>
-							<td>---</td>
-							<td>---</td>
-							<td>
-								
-							</td>
-						</tr>
-						<tr>
-							<td>www.domain-name.com</td>
-							<td>02.03.2016</td>
-							<td>---</td>
-							<td>---</td>
-							<td>---</td>
-							<td>
-								
-							</td>
-						</tr>
-						<tr>
-							<td>www.domain-name.com</td>
-							<td>02.03.2016</td>
-							<td>---</td>
-							<td>---</td>
-							<td>---</td>
-							<td>
-								
-							</td>
-						</tr>
-						<tr>
-							<td>www.domain-name.com</td>
-							<td>02.03.2016</td>
-							<td>---</td>
-							<td>---</td>
-							<td>---</td>
-							<td>
-								
-							</td>
-						</tr>
-						<tr>
-							<td>www.domain-name.com</td>
-							<td>02.03.2016</td>
-							<td>---</td>
-							<td>---</td>
-							<td>---</td>
-							<td>
-								
-							</td>
-						</tr>
-						<tr>
-							<td>www.domain-name.com</td>
-							<td>02.03.2016</td>
-							<td>---</td>
-							<td>---</td>
-							<td>---</td>
-							<td>
-								
-							</td>
-						</tr>
-					</table>
-					<div class="text-center center_buttons">
-						<button type="submit" class="btn">Show 10 more</button>
+					<div class="domain_table row">
+						<table>
+							<tr>
+								<th><span class="active_top">Name</span></th>
+								<th><span class="active_bottom">Reg Date</span></th>
+								<th><span>Next Due</span></th>
+								<th><span>Auto Renew</span></th>
+								<th><span>Status</span></th>
+								<th><span></span></th>
+							</tr>
+							<tr>
+								<td>www.domain-name.com</td>
+								<td>02.03.2016</td>
+								<td>---</td>
+								<td>---</td>
+								<td>---</td>
+								<td>
+									<div class="drop_table">
+									<a  data-toggle="collapse" data-target="#selected_drop" aria-expanded="true" aria-controls="selected_drop"  class="selected">With Selected</a>
+									<div id="selected_drop" class="selected_drop collapse">
+										<ul>			  
+											<li>
+												<a href="#">
+													<img src="http://lorempixel.com/20/20/" alt="">
+													Manage Nameservers
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<img src="http://lorempixel.com/20/20/" alt="">
+													Auto Renewal Status
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<img src="http://lorempixel.com/20/20/" alt="">
+													Registrar Lock Status
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<img src="http://lorempixel.com/20/20/" alt="">
+													Edit Contact Information
+												</a>
+											</li>
+										</ul>
+									</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>www.domain-name.com</td>
+								<td>02.03.2016</td>
+								<td>---</td>
+								<td>---</td>
+								<td>---</td>
+								<td>
+									
+								</td>
+							</tr>
+							<tr>
+								<td>www.domain-name.com</td>
+								<td>02.03.2016</td>
+								<td>---</td>
+								<td>---</td>
+								<td>---</td>
+								<td>
+									
+								</td>
+							</tr>
+							<tr>
+								<td>www.domain-name.com</td>
+								<td>02.03.2016</td>
+								<td>---</td>
+								<td>---</td>
+								<td>---</td>
+								<td>
+									
+								</td>
+							</tr>
+							<tr>
+								<td>www.domain-name.com</td>
+								<td>02.03.2016</td>
+								<td>---</td>
+								<td>---</td>
+								<td>---</td>
+								<td>
+									
+								</td>
+							</tr>
+							<tr>
+								<td>www.domain-name.com</td>
+								<td>02.03.2016</td>
+								<td>---</td>
+								<td>---</td>
+								<td>---</td>
+								<td>
+									
+								</td>
+							</tr>
+							<tr>
+								<td>www.domain-name.com</td>
+								<td>02.03.2016</td>
+								<td>---</td>
+								<td>---</td>
+								<td>---</td>
+								<td>
+									
+								</td>
+							</tr>
+						</table>
+						<div class="text-center center_buttons">
+							<button type="submit" class="btn">Show 10 more</button>
+						</div>
 					</div>
 				</div>
 			</div>	
 		</div>
 		<div class="contacts_wrap container-fluid">
 			<div class="row">
-				<div class="col-md-8">
+				<div class="col-md-8 col-sm-8">
 					<div class="contacts_form">
 						<h4>Get in Touch!</h4>
 						<div class="row">
-							<div class="col-md-6">
+							<div class="col-md-6 col-xs-6">
 								<input type="text" placeholder="Name:">
 								<input type="text" placeholder="E-mail:">
 							</div>
-							<div class="col-md-6">
+							<div class="col-md-6 col-xs-6">
 								<textarea placeholder="Message:"></textarea>
 								<input type="submit" value="send" class="button">
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-4">
 					<div class="contacts_txt">
 						<h5>Our contacts:</h5>
 						<p>0207 788 4788</p>

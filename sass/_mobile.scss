@@ -37,6 +37,27 @@
    		.main_info_services p{
    			width: auto;
    		}
+   	.tariffs_block{
+   		width: 32%;
+   		margin-right: 0.5%;
+   	}
+   	.tariffs_calculator .button{
+   		overflow: hidden;
+   		width: auto;
+   	}	
+   	.domain_buttons .text-right a{
+   		font-size: 11px;
+   		height: 27px;
+   	}
+   	.domain_status{
+   		font-size: 16px;
+   	}
+   	.your_domain_info dt{
+   		overflow: hidden;
+   	}
+   	.profile_info_wrap .profile_info_left div input{
+   		width: 65%;
+   	}
 }
 
 //styles for 990 width
@@ -104,6 +125,10 @@
    				height: auto;
    			}
    		}
+	.domain_search{
+		height: auto;
+	}
+	
 }
 
 //styles for 768 width
@@ -161,6 +186,40 @@
 				float: right;
 			}
 		}
+	}
+
+	.tariffs_calculator {
+		.blockquote{
+		width: 55%;
+		}
+		.button{
+			font-size: 17px;
+		}
+	}
+	.domain_buttons{
+		.text-right{
+			text-align: left !important;
+			margin-top: 15px;
+		}
+	}
+	.domain_table_outer{
+		position: relative;
+		overflow: hidden;
+		overflow-x: scroll;
+		.center_buttons{
+			display: none;
+		}
+
+		.domain_search{
+			width: 733px;
+		}
+	}
+	.main_info_top img{
+		padding-bottom: 20px;
+		width: 99%;
+	}
+	.choose_domain_form input{
+		width: 40%;
 	}
 }
 
@@ -231,5 +290,52 @@
 				float: none;
 			}
 		}
+	}
+
+	.tariffs_calculator {
+		display: none;
+		.blockquote{
+		width: 95%;
+		margin: 0 auto;
+		float: none;
+		}
+		.button{
+			font-size: 17px;
+			float: none;
+			margin: 0 auto;
+			margin-top: 20px;
+		}
+	}
+	.tariffs_block{
+		width: 100%;
+		margin-right: 0;
+	}
+	.profile_item {
+		label{
+			width: 51%;
+			padding: 0 4px;
+			line-height: 29px;
+			font-size: 10px;
+		}
+		input, select{
+			font-size: 10px;
+		}
+	}
+	.center_buttons .btn {
+	    margin: 0 2px;
+	    width: 105px;
+	    height: 30px;
+	    font-size: 11px;
+	}
+
+	.your_domain_info dt span{
+		width: 100%;
+		padding-bottom: 30px;
+	}
+	.choose_domain_form span{
+		width: 48px;
+	}
+	.choose_domain_form select{
+		width: 63px;
 	}
 }

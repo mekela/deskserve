@@ -1282,7 +1282,7 @@
 	}
 }
 		.register_form{
-			padding: 18px 0 0 0;
+			padding: 18px  0;
 			.btn{
 				background:#54c5e3;
 				color: #fff;
@@ -1394,6 +1394,7 @@
 		border-color: #d6dde5;
 		dt{
 			background:#eff3f6;
+			overflow: hidden;
 			text-align: left;
 			span{
 				float: none;
