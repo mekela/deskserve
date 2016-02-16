@@ -48,6 +48,7 @@
    	.domain_buttons .text-right a{
    		font-size: 11px;
    		height: 27px;
+   		margin-bottom: 10px;
    	}
    	.domain_status{
    		font-size: 16px;
@@ -63,10 +64,18 @@
 //styles for 990 width
 @include mq($max-width: 990px) {
 	.sidebar{
-		display: none;
+		//display: none;
+		opacity: 0;
+		left: -300px;
+		z-index: -100;
+		transition: all 0.5s ease;
 		&.js_visible{
 			display: block;
 			overflow: auto;
+			//
+			left: 0;
+			opacity: 1;
+			z-index: 100;
 		}
 		.social{
 			position: static;
@@ -220,6 +229,17 @@
 	}
 	.choose_domain_form input{
 		width: 40%;
+		padding: 0 5px;
+		font-size: 11px;
+	}
+
+	.your_domain_info dd ul{
+		-moz-column-count:1;
+		-moz-column-gap: 0px;
+		-webkit-column-count: 1;
+		-webkit-column-gap: 0px;
+		column-count: 1;
+		column-gap: 0px;
 	}
 }
 
@@ -334,8 +354,72 @@
 	}
 	.choose_domain_form span{
 		width: 48px;
+		font-size: 11px;
 	}
 	.choose_domain_form select{
 		width: 63px;
+		font-size: 11px;
+	}
+
+	.domain_status:first-child{
+		padding: 0 10px 0 0;
+	}
+		.domain_status{
+			input{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 15px;
+				height: 15px;
+				z-index: 5;
+				opacity: 0;
+			}
+			input:checked + i{
+				background:#54c5e3;
+				box-shadow: none;
+				&:before{
+					content: '';
+					height: 5px;
+					width: 5px;
+					background:#fff;
+					border-radius: 50%;
+					position: absolute;
+					top: 5px;
+					left: 5px;
+				}
+			}
+			span{
+				width: 20px;
+				height: 20px;
+				display: inline-block;
+				font-size: 12px;
+				font-weight: bold;
+				color: #fff;
+				text-align: center;
+				line-height: 20px;
+				border-radius: 13px;
+				margin: 0 0 0 10px;
+				background-color: #4f5f6f;
+			}
+			i{
+				width: 15px;
+				height: 15px;
+				background:#54c5e3;
+				display: inline-block;
+				@include povh('');
+				margin: 0 4px 0 0;
+				top: 4px;
+				border-radius: 50%;
+				background-color: #d6dde5;
+				box-shadow: inset -1px 2px 1px rgba(0,0,0,.3);
+				
+			}
+			label{
+				cursor: pointer;
+			}
+		}
+
+	.title{
+		font-size: 27px;
 	}
 }
