@@ -129,7 +129,7 @@
  	.your_cart{
  		width: 180px;
 		height: 40px;
-		margin: 20px 37px 0 0;
+		margin: 20px 27px 0 0;
 		border-radius: 20px;
 		background-color: #4f5f6f;
 		text-align: left;
@@ -321,6 +321,12 @@
 				padding-bottom: 15px;
 			}
 		}
+			.tweet{
+				img{
+					width: auto;
+					max-width: auto;
+				}
+			}
 		.main_info_services{
 			.col-md-4{
 				padding-bottom: 30px;

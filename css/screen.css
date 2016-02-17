@@ -1443,7 +1443,7 @@ button { outline: none; }
 
 .your_cart, .login_wrap { vertical-align: top; display: inline-block; }
 
-.your_cart { width: 180px; height: 40px; margin: 20px 37px 0 0; border-radius: 20px; background-color: #4f5f6f; text-align: left; line-height: 40px; font-size: 15px; color: #fff; text-decoration: none; }
+.your_cart { width: 180px; height: 40px; margin: 20px 27px 0 0; border-radius: 20px; background-color: #4f5f6f; text-align: left; line-height: 40px; font-size: 15px; color: #fff; text-decoration: none; }
 
 .your_cart span { display: inline-block; border-radius: 50%; text-align: center; width: 26px; height: 26px; line-height: 26px; background: #54c5e3; margin: 0 0 0 35px; }
 
@@ -1506,6 +1506,8 @@ button { outline: none; }
 .main_info_top { margin-bottom: 37px; }
 
 .main_info_top p { padding-bottom: 15px; }
+
+.tweet img { width: auto; max-width: auto; }
 
 .main_info_services .col-md-4 { padding-bottom: 30px; text-align: center; }
 
@@ -1969,6 +1971,7 @@ button { outline: none; }
 
 /*------end-your-cart-----*/
 @media only screen and (min-width: 1550px) { .main_info_top img { width: 100%; }
+  .main_info_top .tweet img { width: auto; }
   .contacts_wrap textarea, .contacts_wrap input { width: 100%; }
   .contacts_wrap .button { width: auto; } }
 
@@ -1982,7 +1985,10 @@ button { outline: none; }
   .domain_buttons .text-right a { font-size: 11px; height: 27px; margin-bottom: 10px; }
   .domain_status { font-size: 16px; }
   .your_domain_info dt { overflow: hidden; }
-  .profile_info_wrap .profile_info_left div input { width: 65%; } }
+  .profile_info_wrap .profile_info_left div input { width: 65%; }
+  .sidebar_list ul li a { font-size: 17px; }
+  .tweet img { max-width: 100%; }
+  .main_info_top .col-md-6 { overflow: hidden; } }
 
 @media only screen and (max-width: 990px) { .sidebar { opacity: 0; left: -300px; z-index: -100; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; }
   .sidebar.js_visible { display: block; overflow: auto; left: 0; opacity: 1; z-index: 100; }

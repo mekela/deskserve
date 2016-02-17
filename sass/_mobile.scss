@@ -9,6 +9,11 @@
 		img{
 			width: 100%;
 		}
+		.tweet{
+			img{
+				width: auto;
+			}
+		}
 	}
 	.contacts_wrap textarea, .contacts_wrap input{
 		width: 100%;
@@ -58,6 +63,17 @@
    	}
    	.profile_info_wrap .profile_info_left div input{
    		width: 65%;
+   	}
+   	.sidebar_list ul li a{
+   		font-size: 17px;
+   	}
+   	.tweet img{
+   		max-width: 100%;
+   	}
+   	.main_info_top {
+   		.col-md-6{
+   			overflow: hidden;
+   		}
    	}
 }
 
