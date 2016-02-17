@@ -21,16 +21,16 @@
  		}
  	}
  	.sidebar_list{
- 		padding: 30px 0;
+ 		padding: 21px 0;
  		ul {
  			li{
  				padding: 0px 0px;
  				padding-top: 0;
- 				padding-bottom: 10px;
+ 				padding-bottom: 4px;
  				a{
  					color: #fff;
  					display: block;
- 					padding: 0 30px;
+ 					padding: 0 30px 0 39px;
  					height: 55px;
  					line-height: 55px;
  					font-size: 20px;
@@ -55,7 +55,7 @@
  						display: block;
  						height: 36px;
  						line-height: 36px;
- 						padding-left: 50px;
+ 						padding-left: 59px;
  						&:hover{
  							background:#394657;
  						}
@@ -63,7 +63,7 @@
  					&:before{
  						content: '';
  						position: absolute;
- 						left: 30px;
+ 						left: 43px;
    						 top: 15px;
  						background:#fff;
  						border-radius: 50%;
@@ -129,7 +129,7 @@
  	.your_cart{
  		width: 180px;
 		height: 40px;
-		margin: 20px 27px 0 0;
+		margin: 20px 37px 0 0;
 		border-radius: 20px;
 		background-color: #4f5f6f;
 		text-align: left;
@@ -308,21 +308,22 @@
 			font-size: 40px;
 			color: #161717;
 			font-weight: bold;
-			padding-bottom: 33px;
+			padding-bottom: 40px;
+			padding-top: 9px;
 			b{
 				color: #54c5e3;
 			}
 		}
 	}
 		.main_info_top{
-			margin-bottom: 55px;
+			margin-bottom: 37px;
 			p{
 				padding-bottom: 15px;
 			}
 		}
 		.main_info_services{
 			.col-md-4{
-				padding-bottom: 40px;
+				padding-bottom: 30px;
 				text-align: center;
 			}	
 			figcaption{
@@ -342,7 +343,7 @@
 				padding: 0 4px;
 			}
 			section{
-				min-height: 482px;
+				min-height: 416px;
 				box-sizing: border-box;
 				padding: 15px;
 				background-color: #fff;
@@ -359,7 +360,7 @@
 			}
 		}
 	.contacts_wrap{
-		padding-bottom: 50px;
+		padding-bottom: 52px;
 		.contacts_form{
 			background:#e7ebed;
 			padding: 15px 18px;
