@@ -1559,15 +1559,15 @@ button { outline: none; }
 /*---------domains_configurations---------*/
 .title { font-size: 40px; color: #161717; padding-bottom: 25px; font-weight: bold; }
 
-.domains_wrap p { font-size: 15px; color: #4f5f6f; padding-bottom: 15px; }
+.domains_wrap p { font-size: 15px; color: #4f5f6f; padding-bottom: 7px; }
 
-.domains_wrap .blue { display: block; padding-bottom: 15px; }
+.domains_wrap .blue { display: block; padding-bottom: 13px; }
 
 .domains_wrap .blue a { font-size: 25px; color: #54c5e3; font-weight: bold; text-decoration: none; }
 
 .domains_info { position: relative; overflow: hidden; vertical-align: top; padding-bottom: 45px; }
 
-.domains_info div { width: 200px; height: 70px; display: inline-block; vertical-align: top; margin: 0 19px 0 0; border-radius: 10px; background: #d6dde5; border: 3px dashed #4f5f6f; text-align: center; }
+.domains_info div { width: 200px; height: 70px; display: inline-block; vertical-align: top; margin: 0 13px 0 0; border-radius: 10px; background: #d6dde5; border: 3px dashed #4f5f6f; text-align: center; }
 
 .domains_info div b { display: block; padding: 5px 0 2px 0; font-size: 20px; color: #161717; font-weight: bold; }
 
@@ -1583,7 +1583,7 @@ button { outline: none; }
 
 .domains_list .domains_list_item p { font-size: 15px; color: #4f5f6f; font-weight: bold; }
 
-.domains_list .domains_list_item label { display: block; text-align: center; font-size: 20px; font-weight: bold; color: #4f5f6f; position: relative; }
+.domains_list .domains_list_item label { display: block; text-align: center; font-size: 20px; font-weight: bold; color: #4f5f6f; position: relative; padding-top: 9px; left: -10px; }
 
 .domains_list .domains_list_item label input { width: 100%; position: absolute; left: 0; top: 0; height: 30px; opacity: 0; }
 
@@ -1593,9 +1593,11 @@ button { outline: none; }
 
 .domains_list .domains_list_item label input:checked + span:before { background: url(../img/icons/checkbox.png) no-repeat top left; }
 
-.nameservers_wrap { padding: 34px 0 71px 0; }
+.nameservers_wrap { padding: 34px 0 86px 0; }
 
-.nameservers_wrap input { display: block; margin-bottom: 10px; border-radius: 10px; }
+.nameservers_wrap > .row { padding-top: 10px; }
+
+.nameservers_wrap input { display: block; margin-bottom: 10px; border-radius: 10px; width: 100%; }
 
 .nameservers_wrap .text-center { padding: 45px 0 0 0; }
 
@@ -1605,7 +1607,7 @@ button { outline: none; }
 
 /*-----end-domains_configurations---------*/
 /*-----------my_details---------*/
-.profile_details { position: relative; overflow: hidden; padding-bottom: 70px; }
+.profile_details { position: relative; overflow: hidden; padding-bottom: 78px; padding-top: 15px; }
 
 .center_buttons { padding: 45px 0 0 0; }
 
@@ -1635,11 +1637,13 @@ button { outline: none; }
 /*-----------my_domain_names---------*/
 .domain_names_wrap { padding-bottom: 70px; }
 
-.domain_buttons { padding-bottom: 27px; }
+.domain_buttons { padding-bottom: 27px; padding-top: 8px; }
+
+.domain_buttons .domain_status:first-child { padding-right: 65px; }
 
 .domain_buttons .text-right { padding: 8px 0 0 0; }
 
-.domain_buttons .text-right a { margin: 0 0 0 5px; vertical-align: top; text-decoration: none; line-height: 30px; padding: 0 15px; display: inline-block; font-size: 15px; font-weight: bold; text-transform: uppercase; color: #fff; height: 30px; border-radius: 15px; background-color: #54c5e3; }
+.domain_buttons .text-right a { margin: 0 0 0 12px; text-align: center; vertical-align: top; text-decoration: none; line-height: 30px; padding: 0 15px; display: inline-block; font-size: 15px; font-weight: bold; text-transform: uppercase; color: #fff; height: 30px; border-radius: 15px; min-width: 143px; background-color: #54c5e3; }
 
 .domain_buttons .text-right a:hover { opacity: 0.8; }
 

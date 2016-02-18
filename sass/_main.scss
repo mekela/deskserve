@@ -450,11 +450,11 @@
 	p{
 		font-size: 15px;
 		color: #4f5f6f;
-		padding-bottom: 15px;
+		padding-bottom: 7px;
 	}
 	.blue{
 		display: block;
-		padding-bottom: 15px;
+		padding-bottom: 13px;
 		a{
 			font-size: 25px;
 			color: #54c5e3;
@@ -472,7 +472,7 @@
 			height: 70px;
 			display: inline-block;
 			vertical-align: top;
-			margin: 0 19px 0 0 ;
+			margin: 0 13px 0 0 ;
 			border-radius: 10px;
 			background: #d6dde5;
 			border: 3px dashed #4f5f6f;
@@ -525,6 +525,8 @@
 				font-weight: bold;
 				color: #4f5f6f;
 				position: relative;
+				padding-top: 9px;
+				left: -10px;
 				input{
 					width: 100%;
 					position: absolute;
@@ -557,11 +559,15 @@
 		}
 	}
 	.nameservers_wrap{
-		padding: 34px 0 71px 0;
+		padding: 34px 0 86px 0;
+		& > .row{
+			padding-top: 10px;
+		}
 		input{
 			display: block;
 			margin-bottom: 10px;
 			border-radius: 10px;
+			width: 100%;
 		}
 		.text-center{
 			padding: 45px 0 0 0;
@@ -589,7 +595,8 @@
 /*-----------my_details---------*/
 .profile_details{
 	@include povh('');
-	padding-bottom: 70px;
+	padding-bottom: 78px;
+	padding-top: 15px;
 }
 		.center_buttons{
 			padding: 45px 0 0 0;
@@ -680,10 +687,15 @@
 }
 	.domain_buttons{
 		padding-bottom: 27px;
+		padding-top: 8px;
+		.domain_status:first-child{
+			padding-right: 65px;
+		}
 		.text-right {
 			padding: 8px 0 0 0;
 			a{
-				margin: 0 0 0 5px;
+				margin: 0 0 0 12px;
+				text-align: center;
 				vertical-align: top;
 				text-decoration: none;
 				line-height: 30px;
@@ -695,6 +707,7 @@
 				color: #fff;
 				height: 30px;
 				border-radius: 15px;
+				min-width: 143px;
 				background-color: #54c5e3;
 				&:hover{
 					opacity: 0.8;
