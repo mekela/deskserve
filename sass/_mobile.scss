@@ -21,6 +21,27 @@
 	.contacts_wrap .button{
 		width: auto;
 	}
+
+
+}
+
+@include mq($max-width: 1450px) {
+
+   	.tariffs_block{
+		figure{
+			figcaption{
+				font-size: 22px;
+			}
+		}
+		li{
+			font-size: 15px;
+		}
+	}
+
+	.cart_table tbody td:first-child{
+		width: 79%;
+	}
+	
 }
 
 //styles for 1250 width
@@ -75,6 +96,10 @@
    			overflow: hidden;
    		}
    	}
+	
+	.cart_table tbody td:first-child{
+		width: 70%;
+	}
 }
 
 //styles for 990 width
