@@ -1515,9 +1515,9 @@ button { outline: none; }
 
 .main_info_services p { width: 275px; margin: 0 auto; line-height: 24px; }
 
-.built { line-height: 24px; }
+.built { line-height: 24px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
 
-.built .col-md-4 { padding: 0 4px; }
+.built .col-md-4 { padding: 0 4px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
 
 .built section { min-height: 416px; box-sizing: border-box; padding: 15px; background-color: #fff; box-shadow: 0 0 5px rgba(0, 0, 0, 0.05); }
 
@@ -2033,7 +2033,8 @@ button { outline: none; }
   .domain_search { height: auto; } }
 
 @media only screen and (max-width: 768px) { .button { font-size: 15px; }
-  .built .col-md-4 { margin-bottom: 10px; }
+  .built { display: block; }
+  .built .col-md-4 { margin-bottom: 10px; display: block; }
   .built section { min-height: auto; }
   .main_info h2 { font-size: 30px; }
   .contacts_wrap .col-md-4, .contacts_wrap .col-md-8 { padding-left: 3px; margin-bottom: 19px; padding-right: 3px; }

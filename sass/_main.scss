@@ -345,8 +345,10 @@
 		}
 		.built{
 			line-height: 24px;
+			display: flex;
 			.col-md-4{
 				padding: 0 4px;
+				display: flex;
 			}
 			section{
 				min-height: 416px;
